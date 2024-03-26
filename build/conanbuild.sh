@@ -1,0 +1,1 @@
+. "/Users/jk/Programming/CPP/learning/raylib/build/conanbuildenv-release-armv8.sh"

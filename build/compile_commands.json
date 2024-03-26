@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/jk/Programming/CPP/learning/raylib/build/pong",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/jk/.conan2/p/b/raylifc57477b528d6/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/PONG.dir/pong.cpp.o -c /Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp",
+  "file": "/Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp",
+  "output": "pong/CMakeFiles/PONG.dir/pong.cpp.o"
+},
+{
+  "directory": "/Users/jk/Programming/CPP/learning/raylib/build/pong",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/jk/.conan2/p/b/raylifc57477b528d6/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/PONG.dir/game_objects.cpp.o -c /Users/jk/Programming/CPP/learning/raylib/pong/game_objects.cpp",
+  "file": "/Users/jk/Programming/CPP/learning/raylib/pong/game_objects.cpp",
+  "output": "pong/CMakeFiles/PONG.dir/game_objects.cpp.o"
+},
+{
+  "directory": "/Users/jk/Programming/CPP/learning/raylib/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -I/Users/jk/Programming/CPP/learning/raylib/pong -isystem /Users/jk/.conan2/p/b/raylifc57477b528d6/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/dupa.dir/main.cpp.o -c /Users/jk/Programming/CPP/learning/raylib/src/main.cpp",
+  "file": "/Users/jk/Programming/CPP/learning/raylib/src/main.cpp",
+  "output": "src/CMakeFiles/dupa.dir/main.cpp.o"
+}
+]

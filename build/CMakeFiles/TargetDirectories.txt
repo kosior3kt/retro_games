@@ -1,0 +1,8 @@
+/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles/edit_cache.dir
+/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles/rebuild_cache.dir
+/Users/jk/Programming/CPP/learning/raylib/build/pong/CMakeFiles/PONG.dir
+/Users/jk/Programming/CPP/learning/raylib/build/pong/CMakeFiles/edit_cache.dir
+/Users/jk/Programming/CPP/learning/raylib/build/pong/CMakeFiles/rebuild_cache.dir
+/Users/jk/Programming/CPP/learning/raylib/build/src/CMakeFiles/dupa.dir
+/Users/jk/Programming/CPP/learning/raylib/build/src/CMakeFiles/edit_cache.dir
+/Users/jk/Programming/CPP/learning/raylib/build/src/CMakeFiles/rebuild_cache.dir

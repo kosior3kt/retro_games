@@ -1,6 +1,8 @@
 [requires]
 raylib/5.0
 imgui/cci.20230105+1.89.2.docking
+glfw/3.3.8
+fltk/1.3.9
 [generators]
 CMakeDeps
 CMakeToolchain

@@ -2,7 +2,11 @@
 
 void game_loop::run_game()
 {
+
+#ifndef __NO_GUI__
    InitWindow(WIDTH, HEIGHT, "dupa");
+#endif
+
    SetTargetFPS(60);
 
    Ball ball(WIDTH / 2, HEIGHT / 2, 20.0f);
@@ -34,5 +38,8 @@ void game_loop::run_game()
 
       EndDrawing();
    }
+
+#ifndef __NO_GUI__
    CloseWindow();
+#endif
 }

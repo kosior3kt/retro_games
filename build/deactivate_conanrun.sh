@@ -1,1 +1,0 @@
-. "/Users/jk/Programming/CPP/learning/raylib/build/deactivate_conanrunenv-release-armv8.sh"

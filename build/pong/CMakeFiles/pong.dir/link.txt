@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libPONG.a CMakeFiles/PONG.dir/pong.cpp.o CMakeFiles/PONG.dir/game_objects.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libPONG.a

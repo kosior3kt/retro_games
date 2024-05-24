@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jk/Programming/CPP/learning/raylib
+# Install script for directory: /Users/jk/Programming/cpp/learning/raylib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/jk/Programming/CPP/learning/raylib/build/pong/cmake_install.cmake")
+  include("/Users/jk/Programming/cpp/learning/raylib/build/pong/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/jk/Programming/CPP/learning/raylib/build/src/cmake_install.cmake")
+  include("/Users/jk/Programming/cpp/learning/raylib/build/src/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/jk/Programming/cpp/learning/raylib/build/snake/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jk/Programming/CPP/learning/raylib/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jk/Programming/cpp/learning/raylib/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

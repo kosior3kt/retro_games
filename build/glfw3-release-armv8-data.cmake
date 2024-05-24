@@ -12,7 +12,7 @@ set(glfw_PACKAGE_FOLDER_RELEASE "/Users/jk/.conan2/p/b/glfw447767bdcdc3c/p")
 set(glfw_BUILD_MODULES_PATHS_RELEASE )
 
 
-set(glfw_INCLUDE_DIRS_RELEASE )
+set(glfw_INCLUDE_DIRS_RELEASE "${glfw_PACKAGE_FOLDER_RELEASE}/include")
 set(glfw_RES_DIRS_RELEASE )
 set(glfw_DEFINITIONS_RELEASE )
 set(glfw_SHARED_LINK_FLAGS_RELEASE )

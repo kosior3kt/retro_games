@@ -3,5 +3,7 @@ message(STATUS "Conan: It is recommended to use explicit find_package() per depe
 
 find_package(raylib)
 find_package(imgui)
+find_package(glfw3)
+find_package(fltk)
 
-set(CONANDEPS_LEGACY  raylib  imgui::imgui )
+set(CONANDEPS_LEGACY  raylib  imgui::imgui  glfw  fltk::fltk )

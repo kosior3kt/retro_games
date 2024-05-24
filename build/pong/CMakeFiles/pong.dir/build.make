@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.9/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jk/Programming/CPP/learning/raylib
+CMAKE_SOURCE_DIR = /Users/jk/Programming/cpp/learning/raylib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jk/Programming/CPP/learning/raylib/build
+CMAKE_BINARY_DIR = /Users/jk/Programming/cpp/learning/raylib/build
 
 # Include any dependencies generated for this target.
 include pong/CMakeFiles/PONG.dir/depend.make
@@ -70,32 +70,32 @@ include pong/CMakeFiles/PONG.dir/progress.make
 include pong/CMakeFiles/PONG.dir/flags.make
 
 pong/CMakeFiles/PONG.dir/pong.cpp.o: pong/CMakeFiles/PONG.dir/flags.make
-pong/CMakeFiles/PONG.dir/pong.cpp.o: /Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp
+pong/CMakeFiles/PONG.dir/pong.cpp.o: /Users/jk/Programming/cpp/learning/raylib/pong/pong.cpp
 pong/CMakeFiles/PONG.dir/pong.cpp.o: pong/CMakeFiles/PONG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pong/CMakeFiles/PONG.dir/pong.cpp.o"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pong/CMakeFiles/PONG.dir/pong.cpp.o -MF CMakeFiles/PONG.dir/pong.cpp.o.d -o CMakeFiles/PONG.dir/pong.cpp.o -c /Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pong/CMakeFiles/PONG.dir/pong.cpp.o"
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pong/CMakeFiles/PONG.dir/pong.cpp.o -MF CMakeFiles/PONG.dir/pong.cpp.o.d -o CMakeFiles/PONG.dir/pong.cpp.o -c /Users/jk/Programming/cpp/learning/raylib/pong/pong.cpp
 
 pong/CMakeFiles/PONG.dir/pong.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PONG.dir/pong.cpp.i"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp > CMakeFiles/PONG.dir/pong.cpp.i
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jk/Programming/cpp/learning/raylib/pong/pong.cpp > CMakeFiles/PONG.dir/pong.cpp.i
 
 pong/CMakeFiles/PONG.dir/pong.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PONG.dir/pong.cpp.s"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp -o CMakeFiles/PONG.dir/pong.cpp.s
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jk/Programming/cpp/learning/raylib/pong/pong.cpp -o CMakeFiles/PONG.dir/pong.cpp.s
 
 pong/CMakeFiles/PONG.dir/game_objects.cpp.o: pong/CMakeFiles/PONG.dir/flags.make
-pong/CMakeFiles/PONG.dir/game_objects.cpp.o: /Users/jk/Programming/CPP/learning/raylib/pong/game_objects.cpp
+pong/CMakeFiles/PONG.dir/game_objects.cpp.o: /Users/jk/Programming/cpp/learning/raylib/pong/game_objects.cpp
 pong/CMakeFiles/PONG.dir/game_objects.cpp.o: pong/CMakeFiles/PONG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pong/CMakeFiles/PONG.dir/game_objects.cpp.o"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pong/CMakeFiles/PONG.dir/game_objects.cpp.o -MF CMakeFiles/PONG.dir/game_objects.cpp.o.d -o CMakeFiles/PONG.dir/game_objects.cpp.o -c /Users/jk/Programming/CPP/learning/raylib/pong/game_objects.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pong/CMakeFiles/PONG.dir/game_objects.cpp.o"
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pong/CMakeFiles/PONG.dir/game_objects.cpp.o -MF CMakeFiles/PONG.dir/game_objects.cpp.o.d -o CMakeFiles/PONG.dir/game_objects.cpp.o -c /Users/jk/Programming/cpp/learning/raylib/pong/game_objects.cpp
 
 pong/CMakeFiles/PONG.dir/game_objects.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PONG.dir/game_objects.cpp.i"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jk/Programming/CPP/learning/raylib/pong/game_objects.cpp > CMakeFiles/PONG.dir/game_objects.cpp.i
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jk/Programming/cpp/learning/raylib/pong/game_objects.cpp > CMakeFiles/PONG.dir/game_objects.cpp.i
 
 pong/CMakeFiles/PONG.dir/game_objects.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PONG.dir/game_objects.cpp.s"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jk/Programming/CPP/learning/raylib/pong/game_objects.cpp -o CMakeFiles/PONG.dir/game_objects.cpp.s
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jk/Programming/cpp/learning/raylib/pong/game_objects.cpp -o CMakeFiles/PONG.dir/game_objects.cpp.s
 
 # Object files for target PONG
 PONG_OBJECTS = \
@@ -109,19 +109,19 @@ pong/libPONG.a: pong/CMakeFiles/PONG.dir/pong.cpp.o
 pong/libPONG.a: pong/CMakeFiles/PONG.dir/game_objects.cpp.o
 pong/libPONG.a: pong/CMakeFiles/PONG.dir/build.make
 pong/libPONG.a: pong/CMakeFiles/PONG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libPONG.a"
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && $(CMAKE_COMMAND) -P CMakeFiles/PONG.dir/cmake_clean_target.cmake
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PONG.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libPONG.a"
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && $(CMAKE_COMMAND) -P CMakeFiles/PONG.dir/cmake_clean_target.cmake
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PONG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 pong/CMakeFiles/PONG.dir/build: pong/libPONG.a
 .PHONY : pong/CMakeFiles/PONG.dir/build
 
 pong/CMakeFiles/PONG.dir/clean:
-	cd /Users/jk/Programming/CPP/learning/raylib/build/pong && $(CMAKE_COMMAND) -P CMakeFiles/PONG.dir/cmake_clean.cmake
+	cd /Users/jk/Programming/cpp/learning/raylib/build/pong && $(CMAKE_COMMAND) -P CMakeFiles/PONG.dir/cmake_clean.cmake
 .PHONY : pong/CMakeFiles/PONG.dir/clean
 
 pong/CMakeFiles/PONG.dir/depend:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jk/Programming/CPP/learning/raylib /Users/jk/Programming/CPP/learning/raylib/pong /Users/jk/Programming/CPP/learning/raylib/build /Users/jk/Programming/CPP/learning/raylib/build/pong /Users/jk/Programming/CPP/learning/raylib/build/pong/CMakeFiles/PONG.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jk/Programming/cpp/learning/raylib /Users/jk/Programming/cpp/learning/raylib/pong /Users/jk/Programming/cpp/learning/raylib/build /Users/jk/Programming/cpp/learning/raylib/build/pong /Users/jk/Programming/cpp/learning/raylib/build/pong/CMakeFiles/PONG.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pong/CMakeFiles/PONG.dir/depend
 

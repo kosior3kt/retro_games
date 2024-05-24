@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.9/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jk/Programming/CPP/learning/raylib
+CMAKE_SOURCE_DIR = /Users/jk/Programming/cpp/learning/raylib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jk/Programming/CPP/learning/raylib/build
+CMAKE_BINARY_DIR = /Users/jk/Programming/cpp/learning/raylib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles /Users/jk/Programming/CPP/learning/raylib/build/pong//CMakeFiles/progress.marks
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles 0
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles /Users/jk/Programming/cpp/learning/raylib/build/pong//CMakeFiles/progress.marks
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/clean
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/preinstall
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/preinstall
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pong/CMakeFiles/PONG.dir/rule:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/CMakeFiles/PONG.dir/rule
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/CMakeFiles/PONG.dir/rule
 .PHONY : pong/CMakeFiles/PONG.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ PONG: pong/CMakeFiles/PONG.dir/rule
 
 # fast build rule for target.
 PONG/fast:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/build
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/build
 .PHONY : PONG/fast
 
 game_objects.o: game_objects.cpp.o
@@ -135,7 +135,7 @@ game_objects.o: game_objects.cpp.o
 
 # target to build an object file
 game_objects.cpp.o:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/game_objects.cpp.o
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/game_objects.cpp.o
 .PHONY : game_objects.cpp.o
 
 game_objects.i: game_objects.cpp.i
@@ -143,7 +143,7 @@ game_objects.i: game_objects.cpp.i
 
 # target to preprocess a source file
 game_objects.cpp.i:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/game_objects.cpp.i
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/game_objects.cpp.i
 .PHONY : game_objects.cpp.i
 
 game_objects.s: game_objects.cpp.s
@@ -151,7 +151,7 @@ game_objects.s: game_objects.cpp.s
 
 # target to generate assembly for a file
 game_objects.cpp.s:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/game_objects.cpp.s
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/game_objects.cpp.s
 .PHONY : game_objects.cpp.s
 
 pong.o: pong.cpp.o
@@ -159,7 +159,7 @@ pong.o: pong.cpp.o
 
 # target to build an object file
 pong.cpp.o:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/pong.cpp.o
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/pong.cpp.o
 .PHONY : pong.cpp.o
 
 pong.i: pong.cpp.i
@@ -167,7 +167,7 @@ pong.i: pong.cpp.i
 
 # target to preprocess a source file
 pong.cpp.i:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/pong.cpp.i
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/pong.cpp.i
 .PHONY : pong.cpp.i
 
 pong.s: pong.cpp.s
@@ -175,7 +175,7 @@ pong.s: pong.cpp.s
 
 # target to generate assembly for a file
 pong.cpp.s:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/pong.cpp.s
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/pong.cpp.s
 .PHONY : pong.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/jk/Programming/CPP/learning/raylib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/jk/Programming/cpp/learning/raylib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

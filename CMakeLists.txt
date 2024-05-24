@@ -13,6 +13,7 @@ find_package(fltk REQUIRED)
 
 add_subdirectory(pong)
 add_subdirectory(src)
+add_subdirectory(snake)
 #add_subdirectory(rlImGui)
 
 target_link_libraries(${PROJECT_NAME}

@@ -1,5 +1,5 @@
-#ifndef __dupa__
-#define __dupa__
+#ifndef __PONG_GO__
+#define __PONG_GO__
 
 #include "consts.h"
 

@@ -54,10 +54,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.9/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jk/Programming/CPP/learning/raylib
+CMAKE_SOURCE_DIR = /Users/jk/Programming/cpp/learning/raylib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jk/Programming/CPP/learning/raylib/build
+CMAKE_BINARY_DIR = /Users/jk/Programming/cpp/learning/raylib/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -65,16 +65,19 @@ CMAKE_BINARY_DIR = /Users/jk/Programming/CPP/learning/raylib/build
 # The main recursive "all" target.
 all: pong/all
 all: src/all
+all: snake/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pong/preinstall
 preinstall: src/preinstall
+preinstall: snake/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: pong/clean
 clean: src/clean
+clean: snake/clean
 .PHONY : clean
 
 #=============================================================================
@@ -91,6 +94,21 @@ pong/preinstall:
 # Recursive "clean" directory target.
 pong/clean: pong/CMakeFiles/PONG.dir/clean
 .PHONY : pong/clean
+
+#=============================================================================
+# Directory level rules for directory snake
+
+# Recursive "all" directory target.
+snake/all: snake/CMakeFiles/SNAKE.dir/all
+.PHONY : snake/all
+
+# Recursive "preinstall" directory target.
+snake/preinstall:
+.PHONY : snake/preinstall
+
+# Recursive "clean" directory target.
+snake/clean: snake/CMakeFiles/SNAKE.dir/clean
+.PHONY : snake/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -114,14 +132,14 @@ src/clean: src/CMakeFiles/dupa.dir/clean
 pong/CMakeFiles/PONG.dir/all:
 	$(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/depend
 	$(MAKE) $(MAKESILENT) -f pong/CMakeFiles/PONG.dir/build.make pong/CMakeFiles/PONG.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles --progress-num=1,2,3 "Built target PONG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles --progress-num=1,2,3 "Built target PONG"
 .PHONY : pong/CMakeFiles/PONG.dir/all
 
 # Build rule for subdir invocation for target.
 pong/CMakeFiles/PONG.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong/CMakeFiles/PONG.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 0
 .PHONY : pong/CMakeFiles/PONG.dir/rule
 
 # Convenience name for target.
@@ -140,14 +158,14 @@ pong/CMakeFiles/PONG.dir/clean:
 src/CMakeFiles/dupa.dir/all: pong/CMakeFiles/PONG.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/dupa.dir/build.make src/CMakeFiles/dupa.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/dupa.dir/build.make src/CMakeFiles/dupa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles --progress-num=4,5 "Built target dupa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles --progress-num=6,7 "Built target dupa"
 .PHONY : src/CMakeFiles/dupa.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/dupa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/dupa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/dupa.dir/rule
 
 # Convenience name for target.
@@ -158,6 +176,32 @@ dupa: src/CMakeFiles/dupa.dir/rule
 src/CMakeFiles/dupa.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/dupa.dir/build.make src/CMakeFiles/dupa.dir/clean
 .PHONY : src/CMakeFiles/dupa.dir/clean
+
+#=============================================================================
+# Target rules for target snake/CMakeFiles/SNAKE.dir
+
+# All Build rule for target.
+snake/CMakeFiles/SNAKE.dir/all:
+	$(MAKE) $(MAKESILENT) -f snake/CMakeFiles/SNAKE.dir/build.make snake/CMakeFiles/SNAKE.dir/depend
+	$(MAKE) $(MAKESILENT) -f snake/CMakeFiles/SNAKE.dir/build.make snake/CMakeFiles/SNAKE.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles --progress-num=4,5 "Built target SNAKE"
+.PHONY : snake/CMakeFiles/SNAKE.dir/all
+
+# Build rule for subdir invocation for target.
+snake/CMakeFiles/SNAKE.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 snake/CMakeFiles/SNAKE.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 0
+.PHONY : snake/CMakeFiles/SNAKE.dir/rule
+
+# Convenience name for target.
+SNAKE: snake/CMakeFiles/SNAKE.dir/rule
+.PHONY : SNAKE
+
+# clean rule for target.
+snake/CMakeFiles/SNAKE.dir/clean:
+	$(MAKE) $(MAKESILENT) -f snake/CMakeFiles/SNAKE.dir/build.make snake/CMakeFiles/SNAKE.dir/clean
+.PHONY : snake/CMakeFiles/SNAKE.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

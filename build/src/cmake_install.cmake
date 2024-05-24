@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jk/Programming/CPP/learning/raylib/src
+# Install script for directory: /Users/jk/Programming/cpp/learning/raylib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

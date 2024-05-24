@@ -98,8 +98,8 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "/Users/jk/.conan2/p/b/raylifc57477b528d6/p/lib" "/Users/jk/.conan2/p/b/glfw447767bdcdc3c/p/lib" "/Users/jk/.conan2/p/b/imgui633c940b33e7f/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "/Users/jk/.conan2/p/b/raylifc57477b528d6/p/include" "/Users/jk/.conan2/p/b/glfw447767bdcdc3c/p/include" "/Users/jk/.conan2/p/b/imgui633c940b33e7f/p/include")
+list(PREPEND CMAKE_LIBRARY_PATH "/Users/jk/.conan2/p/b/raylifc57477b528d6/p/lib" "/Users/jk/.conan2/p/b/imgui633c940b33e7f/p/lib" "/Users/jk/.conan2/p/b/glfw447767bdcdc3c/p/lib" "/Users/jk/.conan2/p/b/fltk2039651c38e88/p/lib" "/Users/jk/.conan2/p/b/libjp3711be560ad0c/p/lib" "/Users/jk/.conan2/p/b/libpna4cd42df0d1df/p/lib" "/Users/jk/.conan2/p/b/zlib0bdc6aa0dcd91/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "/Users/jk/.conan2/p/b/raylifc57477b528d6/p/include" "/Users/jk/.conan2/p/b/imgui633c940b33e7f/p/include" "/Users/jk/.conan2/p/b/glfw447767bdcdc3c/p/include" "/Users/jk/.conan2/p/b/fltk2039651c38e88/p/include" "/Users/jk/.conan2/p/b/libjp3711be560ad0c/p/include" "/Users/jk/.conan2/p/b/libpna4cd42df0d1df/p/include" "/Users/jk/.conan2/p/b/zlib0bdc6aa0dcd91/p/include")
 
 
 

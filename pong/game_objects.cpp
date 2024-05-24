@@ -33,14 +33,15 @@ void Score::increment_right()
 
 void Score::draw()
 {
-   DrawCircle(WIDTH / 4, HEIGHT / 2, 200, BLACK);
+   DrawCircle(GENERAL::WIDTH / 4, GENERAL::HEIGHT / 2, 200, BLACK);
    DrawText(
-       std::to_string(left_score).c_str(), WIDTH / 4, HEIGHT / 2, 100, PINK
+       std::to_string(left_score).c_str(), GENERAL::WIDTH / 4,
+       GENERAL::HEIGHT / 2, 100, PINK
    );
-   DrawCircle((WIDTH / 4) * 3, HEIGHT / 2, 200, BLACK);
+   DrawCircle((GENERAL::WIDTH / 4) * 3, GENERAL::HEIGHT / 2, 200, BLACK);
    DrawText(
-       std::to_string(right_score).c_str(), 3 * (WIDTH / 4), HEIGHT / 2, 100,
-       PINK
+       std::to_string(right_score).c_str(), 3 * (GENERAL::WIDTH / 4),
+       GENERAL::HEIGHT / 2, 100, PINK
    );
 }
 
@@ -69,7 +70,7 @@ void Ball::update(Paddle left_paddle, Paddle right_paddle)
 
    if(!inside_horizontal_space(this->pos_.x))
    {
-      if(this->pos_.x <= WIDTH / 2)
+      if(this->pos_.x <= GENERAL::WIDTH / 2)
       {
          this->score_.increment_right();
       }
@@ -78,8 +79,8 @@ void Ball::update(Paddle left_paddle, Paddle right_paddle)
          this->score_.increment_left();
       }
 
-      this->pos_.x   = WIDTH / 2;
-      this->pos_.y   = HEIGHT / 2;
+      this->pos_.x   = GENERAL::WIDTH / 2;
+      this->pos_.y   = GENERAL::HEIGHT / 2;
       this->speed_.x = this->speed_.x * -1;
       /// update counter here, after checking which side won, or sth
 
@@ -94,15 +95,15 @@ void Ball::update(Paddle left_paddle, Paddle right_paddle)
    }
    this->score_.draw();
 
-   if(this->pos_.x >= WIDTH / 2) /// on the right side
+   if(this->pos_.x >= GENERAL::WIDTH / 2) /// on the right side
    {
       if((this->pos_.x + this->local_dimensions_.r
-          == WIDTH - PADDLE_WIDTH - GAP)
+          == GENERAL::WIDTH - PONG::PADDLE_WIDTH - PONG::GAP)
          && (this->pos_.y
                  > right_paddle.get_y_pos() - this->local_dimensions_.r
              && this->pos_.y < right_paddle.get_y_pos()
                                    + this->local_dimensions_.r
-                                   + PADDLE_HEIGHT))
+                                   + PONG::PADDLE_HEIGHT))
       {
          this->speed_.x = this->speed_.x * -1;
       }
@@ -118,11 +119,12 @@ void Ball::update(Paddle left_paddle, Paddle right_paddle)
    }
    else /// on the left side
    {
-      if((this->pos_.x - this->local_dimensions_.r == PADDLE_WIDTH + GAP)
+      if((this->pos_.x - this->local_dimensions_.r
+          == PONG::PADDLE_WIDTH + PONG::GAP)
          && (this->pos_.y > left_paddle.get_y_pos() - this->local_dimensions_.r
              && this->pos_.y < left_paddle.get_y_pos()
                                    + this->local_dimensions_.r
-                                   + PADDLE_HEIGHT))
+                                   + PONG::PADDLE_HEIGHT))
       {
          this->speed_.x = this->speed_.x * -1;
       }
@@ -159,13 +161,13 @@ bool Ball::inside_vertical_space(int _vert_pos)
 {
    return (
        _vert_pos - this->local_dimensions_.r > 0
-       && _vert_pos + this->local_dimensions_.r < HEIGHT
+       && _vert_pos + this->local_dimensions_.r < GENERAL::HEIGHT
    );
 }
 
 bool Ball::inside_horizontal_space(int _horizontal_pos)
 {
-   return (_horizontal_pos > 0 && _horizontal_pos < WIDTH);
+   return (_horizontal_pos > 0 && _horizontal_pos < GENERAL::WIDTH);
 }
 
 /// definitions of the paddle
@@ -198,7 +200,7 @@ void Paddle::update()
 {
    if(IsKeyDown(this->_local_down))
    {
-      if(this->pos_.y + this->local_dimensions_.height < HEIGHT)
+      if(this->pos_.y + this->local_dimensions_.height < GENERAL::HEIGHT)
          this->pos_.y = this->pos_.y + 4;
    }
    else if(IsKeyDown(this->_local_up))

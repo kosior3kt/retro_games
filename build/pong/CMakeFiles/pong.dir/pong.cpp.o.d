@@ -1,8 +1,8 @@
 pong/CMakeFiles/PONG.dir/pong.cpp.o: \
-  /Users/jk/Programming/CPP/learning/raylib/pong/pong.cpp \
-  /Users/jk/Programming/CPP/learning/raylib/pong/pong.hpp \
-  /Users/jk/Programming/CPP/learning/raylib/pong/consts.h \
-  /Users/jk/Programming/CPP/learning/raylib/pong/game_objects.h \
+  /Users/jk/Programming/cpp/learning/raylib/pong/pong.cpp \
+  /Users/jk/Programming/cpp/learning/raylib/pong/pong.hpp \
+  /Users/jk/Programming/cpp/learning/raylib/resources/consts.h \
+  /Users/jk/Programming/cpp/learning/raylib/pong/game_objects.h \
   /Users/jk/.conan2/p/b/raylifc57477b528d6/p/include/raylib.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \

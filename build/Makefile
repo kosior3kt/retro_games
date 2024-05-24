@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.9/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jk/Programming/CPP/learning/raylib
+CMAKE_SOURCE_DIR = /Users/jk/Programming/cpp/learning/raylib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jk/Programming/CPP/learning/raylib/build
+CMAKE_BINARY_DIR = /Users/jk/Programming/cpp/learning/raylib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles /Users/jk/Programming/CPP/learning/raylib/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles /Users/jk/Programming/cpp/learning/raylib/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/CPP/learning/raylib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jk/Programming/cpp/learning/raylib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,19 @@ dupa/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/dupa.dir/build.make src/CMakeFiles/dupa.dir/build
 .PHONY : dupa/fast
 
+#=============================================================================
+# Target rules for targets named SNAKE
+
+# Build rule for target.
+SNAKE: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SNAKE
+.PHONY : SNAKE
+
+# fast build rule for target.
+SNAKE/fast:
+	$(MAKE) $(MAKESILENT) -f snake/CMakeFiles/SNAKE.dir/build.make snake/CMakeFiles/SNAKE.dir/build
+.PHONY : SNAKE/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -151,6 +164,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PONG"
+	@echo "... SNAKE"
 	@echo "... dupa"
 .PHONY : help
 
